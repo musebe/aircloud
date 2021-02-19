@@ -13,7 +13,7 @@ const Upload = () => {
       setImageDataUrl(reader.result);
     };
     reader.onerror = () => {
-      console.log('AHHHHHHH');
+      console.log('error');
     };
   };
 
@@ -21,10 +21,13 @@ const Upload = () => {
     e.preventDefault();
     console.log('submitting');
     try {
-      const res = await fetch('/.netlify/functions/upload ', {
-        method: 'POST',
-        body: imageDataUrl,
-      });
+      const res = await fetch(
+        'https://aircloud.netlify.app/.netlify/functions/upload ',
+        {
+          method: 'POST',
+          body: imageDataUrl,
+        }
+      );
 
       const data = res.json();
       // console.log(data);
