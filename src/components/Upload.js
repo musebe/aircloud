@@ -17,12 +17,14 @@ const Upload = () => {
     };
   };
 
+  // const local_function = 'http://localhost:58665/api/upload';
+  const deployed_function = 'https://aircloud.netlify.app/.netlify/functions/upload';
   const submitHandler = async (e) => {
     e.preventDefault();
     console.log('submitting');
     try {
       const res = await fetch(
-        'https://aircloud.netlify.app/.netlify/functions/upload ',
+        deployed_function,
         {
           method: 'POST',
           body: imageDataUrl,
