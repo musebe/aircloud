@@ -42,7 +42,11 @@ const Upload = () => {
     <div>
       <form onSubmit={submitHandler}>
         <label>
-          <input type='file' onChange={handleChange} />
+          <input
+            type='file'
+            onChange={handleChange}
+            accept='.jpg, .png, .jpeg'
+          />
           <span>+</span>
         </label>
 

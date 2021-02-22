@@ -22,8 +22,7 @@ exports.handler = async (event) => {
     const record = await table.create({
       imgId: public_id,
       url: secure_url,
-      username: 'musebecodes',
-      likes: 0,
+      username: 'Musebecodes',
     });
     return {
       statusCode: 200,
