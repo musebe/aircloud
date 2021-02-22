@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap");
 
 :root {
   --primary: #6433ff;
@@ -9,9 +9,8 @@
 
 /* base styles & title */
 body {
-  font-family: 'Noto Serif';
+  font-family: "Noto Serif";
   color: var(--secondary);
-
 }
 .App {
   max-width: 960px;
@@ -37,9 +36,9 @@ form {
   text-align: center;
 }
 label input {
-  height:0;
-  width:0;
-  opacity:0;
+  height: 0;
+  width: 0;
+  opacity: 0;
 }
 label {
   display: block;
@@ -61,12 +60,19 @@ label:hover {
 /* image grid styles */
 
 .image-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 300px);
-  grid-gap: 1rem;
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fit, 300px); */
+  /* grid-gap: 1rem; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: "center";
+  width: 100%;
 }
 
 .gallery-img {
+  /* overflow: hidden; */
   height: 300px;
   width: 300px;
   transition: transform 200ms;
@@ -74,12 +80,14 @@ label:hover {
   background-color: #eeeee4;
   display: flex;
   justify-content: center;
-  align-content: center;
+
+  text-align: center;
   align-items: center;
+  margin: 10px;
 }
 
 .title {
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
 }
 
 .gallery-img:hover {
@@ -98,7 +106,7 @@ label:hover {
   text-decoration: none;
   color: var(--secondary);
   font-weight: 300;
-  font-family: 'Noto Serif';
+  font-family: "Noto Serif";
   text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
   text-align: center;
   transition: all 0.2s;
