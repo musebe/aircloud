@@ -2,6 +2,9 @@
 
 > The sample code above demonstrates how to perform image manipulation using [Cloudinary](https://cloudinary.com/), storage on an [AIRTABLE](https://airtable.com/) database using [Netlify cloud functions](https://www.netlify.com/products/functions/)
 
+<iframe class="airtable-embed" src="https://airtable.com/embed/shr3pOyZrmmHZPwEy?backgroundColor=purple&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+
+
 **USAGE**
 
 ## Getting started
